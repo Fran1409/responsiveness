@@ -1,4 +1,13 @@
+.body {
+    display: flex;
+    flex-wrap: wrap;
+}
 
+#small, #medium, #large {
+    margin: 4px;
+    padding: 4px;
+    border-style: solid;
+}
 
 @media only screen and (max-width: 480px) {
     body {
@@ -30,8 +39,7 @@
 
     div.container {
         display: flex;
-        flex-direction: row;
-        width: auto;
+        flex-wrap: wrap;
     }
     #small {
         width: 60%;
