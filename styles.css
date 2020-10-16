@@ -1,3 +1,5 @@
+
+
 @media only screen and (max-width: 480px) {
     body {
         background-color: #fcbad3;
@@ -8,11 +10,10 @@
     p {
         font-size: x-small;
     }
-    #medium {
-        display: none;
-    }
-    #large {
-        display: none;
+    div.container {
+        display: flex;
+        flex-direction: column;
+        width: auto;
     }
 }
   
@@ -26,11 +27,20 @@
     p {
         font-size: medium;
     }
+
+    div.container {
+        display: flex;
+        flex-direction: row;
+        width: auto;
+    }
     #small {
-        display: none;
+        width: 60%;
+    }
+    #medium {
+        width: 30%;
     }
     #large {
-        display: none;
+        width: 100%;
     }
 }
 
@@ -38,16 +48,16 @@
       body {
           background-color: #a8d8ea;
       }
+
+      div.container {
+          display: flex;
+          flex-direction: row;
+          width: auto;
+      }
       h1 {
         font-size: xx-large;
     }
       p {
           font-size: x-large;
-      }
-      #small {
-          display: none;
-      }
-      #medium {
-          display: none;
       }
 }
